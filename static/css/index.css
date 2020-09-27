@@ -1,0 +1,41 @@
+
+#me {
+    width: 250px;
+}
+#bdec {
+    width: 250px;
+}
+#link-reference-img {
+    height: 15px;
+}
+
+.black-background {
+    background-color: #1D1E2C;
+}
+.black {
+    color: #1D1E2C;
+}
+.grey {
+    color: #59656F;
+}
+.grey-background {
+    background-color: #59656F;
+}
+.white-background {
+    background-color: #F7EBEC;
+}
+.white {
+    color: #F7EBEC;
+}
+.purple {
+    color: #AC9FBB;
+}
+.purple-background {
+    background-color: #AC9FBB;
+}
+.pink {
+    color: #DDBDD5;
+}
+.pink-background {
+    background-color: #DDBDD5;
+}
