@@ -9,33 +9,27 @@
     height: 15px;
 }
 
-.black-background {
-    background-color: #1D1E2C;
+.dark-tone {
+    background-color: #031926;
+    color: white;
 }
-.black {
-    color: #1D1E2C;
+
+.mid-tone {
+    background-color: #468189;
+    color: #031926;
 }
-.grey {
-    color: #59656F;
+
+.secondary-mid-tone {
+    background-color: #77ACA2;
+    color: #031926;
 }
-.grey-background {
-    background-color: #59656F;
+
+.bright-tone {
+    background-color: #9DBEBB;
+    color: #031926;
 }
-.white-background {
-    background-color: #F7EBEC;
-}
-.white {
-    color: #F7EBEC;
-}
-.purple {
-    color: #AC9FBB;
-}
-.purple-background {
-    background-color: #AC9FBB;
-}
-.pink {
-    color: #DDBDD5;
-}
-.pink-background {
-    background-color: #DDBDD5;
+
+.secondary-bright-tone {
+    background-color: #F4E9CD;
+    color: #031926;
 }
