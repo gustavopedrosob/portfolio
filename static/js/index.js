@@ -6,6 +6,10 @@ function setCurrentTheme(theme) {
     document.documentElement.setAttribute("data-bs-theme", theme);
 }
 
+function syncThemeButton(theme) {
+    document.getElementById("btn-check-outlined").checked = theme === "dark" ? true : false;
+}
+
 function onThemeChange() {
     const newTheme = getCurrentTheme() === "light" ? "dark" : "light"
     setCurrentTheme(newTheme);
@@ -21,8 +25,10 @@ function setSavedTheme(theme) {
 }
 
 function loadTheme() {
-    const savedTheme = getSavedTheme();
-    setCurrentTheme(savedTheme ? savedTheme : "light");
+    let savedTheme = getSavedTheme();
+    savedTheme = savedTheme ? savedTheme : "light";
+    setCurrentTheme(savedTheme);
+    syncThemeButton(savedTheme);
 }
 
 loadTheme();
