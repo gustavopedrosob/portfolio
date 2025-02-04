@@ -17,3 +17,11 @@ html {
 .card {
   min-height: 16rem;
 }
+
+.badge {
+  font-size: 2rem;
+}
+
+.icon-link {
+  font-size: 1.32rem;
+}
