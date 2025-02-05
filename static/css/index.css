@@ -25,3 +25,7 @@ html {
 .icon-link {
   font-size: 1.32rem;
 }
+
+.project-item {
+  flex: 1 0 540px;
+}
