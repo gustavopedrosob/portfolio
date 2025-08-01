@@ -1,3 +1,5 @@
+import { differenceInYears } from "https://cdn.skypack.dev/date-fns";
+
 function getCurrentTheme() {
     return document.documentElement.getAttribute("data-bs-theme");
 }
@@ -31,4 +33,16 @@ function loadTheme() {
     syncThemeButton(savedTheme);
 }
 
+function getAge() {
+    const birthday = new Date(2002, 5, 27);
+    const today = new Date();
+    return differenceInYears(today, birthday);
+}
+
+function setAgeAtDOM() {
+    const aboutElement = document.getElementById("about");
+    aboutElement.textContent = aboutElement.textContent.replace("{{idade}}", getAge());
+}
+
 loadTheme();
+setAgeAtDOM();
