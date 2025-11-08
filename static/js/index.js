@@ -41,8 +41,17 @@ function getAge() {
 
 function setAgeAtDOM() {
     const aboutElement = document.getElementById("about");
-    aboutElement.textContent = aboutElement.textContent.replace("{{idade}}", getAge());
+    aboutElement.textContent = aboutElement.textContent.replace("%y", getAge());
 }
 
-loadTheme();
-setAgeAtDOM();
+function setAboutVisible() {
+    const aboutElement = document.getElementById("about");
+    aboutElement.setAttribute("style", "visibility: visible")
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    loadTheme();
+    setAgeAtDOM();
+    setAboutVisible();
+});
